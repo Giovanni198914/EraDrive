@@ -30,15 +30,11 @@ function NavBar() {
           </NavDropdown>
         </Nav>
         <Nav className='ms-auto'>
-          <button type="button" className="btn btn-outline-dark me-3 d-lg-none">
-            <FontAwesomeIcon icon={faShoppingCart} className='text-white' />
-            <span className="ms-3 badge rounded-pill bg-dark">0</span>
-          </button>
-          <button type="button" className="btn btn-outline-dark d-none d-lg-inline">
+          <button type="button" className="btn btn-outline-dark me-auto ps-0">
             <FontAwesomeIcon icon={faShoppingCart} className='text-white' />
             <span className=" badge rounded-pill bg-dark">0</span>
           </button>
-          <NavDropdown title={<FontAwesomeIcon icon={faUser} className='text-white me-2'/>} id="userDropdown" align="end">
+          <NavDropdown title={<FontAwesomeIcon icon={faUser} className='text-white ms-0'/>} id="userDropdown" align="end">
             <NavLink to="/" className="dropdown-item text-dark">
               Login
             </NavLink>

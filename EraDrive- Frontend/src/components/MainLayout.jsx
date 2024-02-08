@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Sfondo1 from '../photos/Sfondo1.jpg';
@@ -6,7 +6,7 @@ import Sfondo2 from '../photos/Sfondo2.jpg';
 import Sfondo3 from '../photos/Sfondo3.jpg';
 import "../App.css"
 
-function HeroSection() {
+function MainLayout() {
   return (
     <Carousel>
       <Carousel.Item>
@@ -14,21 +14,21 @@ function HeroSection() {
           className="d-block w-100 img-fluid"
           src={Sfondo1}
           alt="First slide"
-          style={{ height: '800px' }}
         />
         <Carousel.Caption>
-        <h3>Senti il rombo del motore, vivi l'ebbrezza: il nostro sito, la tua avventura da corsa.</h3>
+          <h3>Prima Immagine</h3>
+          <p>Descrizione della prima immagine.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100  img-fluid"
+          className="d-block w-100 img-fluid"
           src={Sfondo2}
           alt="Second slide"
-          style={{ height: '800px' }}
         />
         <Carousel.Caption>
-        <h3>Esperienze da corsa: il viaggio più emozionante della tua vita inizia qui!</h3>
+          <h3>Seconda Immagine</h3>
+          <p>Descrizione della seconda immagine.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -36,14 +36,14 @@ function HeroSection() {
           className="d-block w-100 img-fluid"
           src={Sfondo3}
           alt="Third slide"
-          style={{ height: '800px' }}
         />
         <Carousel.Caption>
-          <h3>Guida il sogno: il nostro sito, la tua pista personale.</h3>
+          <h3>Terza Immagine</h3>
+          <p>Descrizione della terza immagine.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
   );
 }
 
-export default HeroSection;
+export default MainLayout; */
