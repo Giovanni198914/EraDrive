@@ -14,7 +14,7 @@ const CarsSchema = new Schema({
     price: {
         type: String,
     },
-    package: {
+    offerPackage: {
         type: String,
     },
 });

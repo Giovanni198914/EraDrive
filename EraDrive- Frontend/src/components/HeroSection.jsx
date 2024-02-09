@@ -8,35 +8,32 @@ import "../App.css"
 
 function HeroSection() {
   return (
-    <Carousel>
-      <Carousel.Item>
+    <Carousel >
+      <Carousel.Item style={{ height: '500px' }}>
         <img
           className="d-block w-100 img-fluid"
           src={Sfondo1}
           alt="First slide"
-          style={{ height: '800px' }}
         />
         <Carousel.Caption>
         <h3>Senti il rombo del motore, vivi l'ebbrezza: il nostro sito, la tua avventura da corsa.</h3>
         </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
+      </Carousel.Item >
+      <Carousel.Item style={{ height: '500px' }}>
         <img
           className="d-block w-100  img-fluid"
           src={Sfondo2}
           alt="Second slide"
-          style={{ height: '800px' }}
         />
         <Carousel.Caption>
         <h3>Esperienze da corsa: il viaggio più emozionante della tua vita inizia qui!</h3>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{ height: '500px' }}>
         <img
           className="d-block w-100 img-fluid"
           src={Sfondo3}
           alt="Third slide"
-          style={{ height: '800px' }}
         />
         <Carousel.Caption>
           <h3>Guida il sogno: il nostro sito, la tua pista personale.</h3>

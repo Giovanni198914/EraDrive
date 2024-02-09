@@ -2,10 +2,10 @@ import React from 'react';
 /* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-solid-svg-icons';
  */
-const Footer = () => {
+function Footer  ()  {
   return (
-    <footer className="bg-dark text-white text-center py-3">
-      <div className="container">
+    <footer className="bg-dark text-white text-center py-3 mt-5">
+      <div className="container ">
         <div className="row">
           <div className="col-lg-6 mx-auto">
             <p>Seguici su:</p>

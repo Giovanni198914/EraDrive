@@ -7,13 +7,30 @@ carsRouter
     .get(
         "/", async (req, res, next) => {
             try {
-                let cars = await Car.find()
-                res.send(cars)
+                // Estrai offerPackage e model dalla query string
+                const { offerPackage, model } = req.query;
+                let query = {};
+                
+                // Aggiungi offerPackage al filtro se è presente
+                if (offerPackage) {
+                    query.offerPackage = offerPackage;
+                }
+                
+                // Aggiungi CarModel al filtro se è presente, utilizzando una regex per la case-insensitivity
+                if (model) {
+                    query.CarModel = { $regex: new RegExp(model, 'i') };
+                }
+                
+                // Trova i documenti che corrispondono ai criteri di ricerca
+                const cars = await Car.find(query);
+                
+                // Invia i risultati al client
+                res.json(cars);
             } catch (error) {
-                next(error)
+                console.error('Errore durante il recupero dei dati: ', error);
+                res.status(500).send('Errore interno del server');
             }
-        }
-    ) 
+        })
     .get(
         "/:id",  async (req, res, next) => {
             try {

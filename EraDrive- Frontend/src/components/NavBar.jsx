@@ -2,6 +2,7 @@ import { Navbar, Nav, NavDropdown, NavLink } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faUser } from '@fortawesome/free-solid-svg-icons';
 import Logo from "../photos/Logo.jpg"
+import { Link } from "react-router-dom"; 
 
 function NavBar() {
   return (
@@ -18,7 +19,7 @@ function NavBar() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home" className="text-white">Home</Nav.Link>
+        <Nav.Link as={Link} to="/" className="text-white">Home</Nav.Link>
           <Nav.Link href="#features" className="text-white">Chi siamo</Nav.Link>
           <Nav.Link href="#pricing" className="text-white">La nostra mission</Nav.Link>
           <NavDropdown title="Prenota" id="basic-nav-dropdown">
@@ -35,11 +36,11 @@ function NavBar() {
             <span className=" badge rounded-pill bg-dark">0</span>
           </button>
           <NavDropdown title={<FontAwesomeIcon icon={faUser} className='text-white ms-0'/>} id="userDropdown" align="end">
-            <NavLink to="/" className="dropdown-item text-dark">
-              Login
+            <NavLink as={Link} to="/login" className="dropdown-item text-dark">
+              Accedi
             </NavLink>
-            <NavLink to="/" className="dropdown-item text-dark">
-              Sign Up
+            <NavLink as={Link} to="/register" className="dropdown-item text-dark">
+              Registrati
             </NavLink>
           </NavDropdown>
         </Nav>
