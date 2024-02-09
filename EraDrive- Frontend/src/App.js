@@ -1,29 +1,31 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css';
-import NavBar from "./components/NavBar";
+import { CartProvider } from "./cartContext";
+import Layout from "./components/Layout";
 import Home from "./components/Home";
-import Footer from "./components/Footer";
-import Login from "./components/Login"; // Assicurati di avere un componente Login
+import Login from "./components/Login";
 import Register from "./components/Register";
+import Mission from "./components/Mission";
+import ChiSiamo from "./components/ChiSiamo";
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavBar/>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register/>} />
-        <Route path="/" element={<Home/>} />
-        {/* Aggiungi ulteriori rotte qui se necessario */}
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/" element={<Layout><Home /></Layout>} />
+          <Route path="/mission" element={<Layout><Mission /></Layout>} />
+          <Route path="/chi-siamo" element={<Layout><ChiSiamo /></Layout>} />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 
 export default App;
+
 
 
 

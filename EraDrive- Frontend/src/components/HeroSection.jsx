@@ -16,7 +16,7 @@ function HeroSection() {
           alt="First slide"
         />
         <Carousel.Caption>
-        <h3>Senti il rombo del motore, vivi l'ebbrezza: il nostro sito, la tua avventura da corsa.</h3>
+          <h3>Senti il rombo del motore, vivi l'ebbrezza: il nostro sito, la tua avventura da corsa.</h3>
         </Carousel.Caption>
       </Carousel.Item >
       <Carousel.Item style={{ height: '500px' }}>
@@ -26,7 +26,7 @@ function HeroSection() {
           alt="Second slide"
         />
         <Carousel.Caption>
-        <h3>Esperienze da corsa: il viaggio più emozionante della tua vita inizia qui!</h3>
+          <h3>Esperienze da corsa: il viaggio più emozionante della tua vita inizia qui!</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ height: '500px' }}>

@@ -10,21 +10,21 @@ function SearchBar({ onSearch }) {
   const [error, setError] = useState('');
 
   const handleClick = async () => {
-  try {
-    // Costruisci la query string basata sui filtri selezionati
-    const queryString = `?package=${selectedPackage}&model=${encodeURIComponent(selectedModel)}`;
-    const response = await fetch(`http://localhost:3030/api/cars${queryString}`);
-    const data = await response.json();
+    try {
+      // Costruisci la query string basata sui filtri selezionati
+      const queryString = `?package=${selectedPackage}&model=${encodeURIComponent(selectedModel)}`;
+      const response = await fetch(`http://localhost:3030/api/cars${queryString}`);
+      const data = await response.json();
 
-    onSearch(data);
-  } catch (error) {
-    console.error('Errore durante il recupero dei dati: ', error);
-    setError('Impossibile recuperare i dati');
-  }
-};
+      onSearch(data);
+    } catch (error) {
+      console.error('Errore durante il recupero dei dati: ', error);
+      setError('Impossibile recuperare i dati');
+    }
+  };
 
   return (
-    <Container className="mt-5 fs-6 bg-light rounded-5 p-3 mb-5">
+    <Container className="mt-5 fs-6 bg-light rounded-5 p-3 mb-5" id="prenota">
       <Form>
         <Row>
           <Col md={5} className="mb-3 text-center">

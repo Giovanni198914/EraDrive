@@ -1,23 +1,24 @@
 import React from 'react';
-/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-solid-svg-icons';
- */
-function Footer  ()  {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
+
+function Footer() {
   return (
-    <footer className="bg-dark text-white text-center py-3 mt-5">
+    <footer className="bg-dark text-white text-center py-3 mt-5 mb-0">
       <div className="container ">
         <div className="row">
           <div className="col-lg-6 mx-auto">
-            <p>Seguici su:</p>
-            <div className="social-icons">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white me-3">
-                {/* <FontAwesomeIcon icon={faFacebook} size="2x" /> */}
+            <p>Seguici su</p>
+            <div>
+              <a href="https://www.facebook.com/" target="_blank" className="text-white me-4">
+                <FontAwesomeIcon icon={faFacebook} className="text-white  fs-4 " />
               </a>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-white me-3">
-                {/* <FontAwesomeIcon icon={faTwitter} size="2x" /> */}
+              <a href="https://twitter.com/" target="_blank" className="text-white  fs-4 me-4 ">
+                <FontAwesomeIcon icon={faTwitter} className="text-white  fs-4 " />
               </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-white">
-                {/* <FontAwesomeIcon icon={faInstagram} size="2x" /> */}
+              <a href="https://www.instagram.com/" target="_blank" className="text-white">
+                <FontAwesomeIcon icon={faInstagram} className="text-white  fs-4 " />
               </a>
             </div>
           </div>
